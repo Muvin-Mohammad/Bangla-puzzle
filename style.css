@@ -1,0 +1,69 @@
+body {
+  background-color: #e3e7e8;
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d3b9ae;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+
+.list .item {
+  text-align: center;
+  background-color: #dce0e1;
+  padding: 20px;
+  box-shadow: 0 50px 50px #757676;
+}
+
+.list .item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.list .item .title {
+  font-weight: 600;
+}
+
+.list .item button {
+  background-color: #1c1f25;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.closeShopping {
+  display: none;
+}
+
+body.active .closeShopping {
+  display: block;
+}
